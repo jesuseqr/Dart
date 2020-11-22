@@ -1,0 +1,33 @@
+Un booleano permite almacenar valores de verdadero o falso. Se definen con la palabra reservado bool, seguido del nombre de la variable igual true o false punto y coma. 
+
+Un condicional es una sentencia que se ejecutará al cumplirse una o más condiciones especificadas. Se definen o declaran con la palabra reservada if y sus condiciones se colocan dentro del paréntesis, y luego, dentro de llaves, se coloca el código a ejecutar al cumplirse el contenido del paréntesis. Las condiciones se evaluan por medio de signos de comparación.
+
+Se puede declarar acciones a ejecutar en caso de no cumplirse la o las condiciones establecidas, para ello, seguido de la llave de cierre del if, se coloca la palabra reservada else, seguida de llaves que contienen el código a ejecutar en caso de no cumplirse las condiciones. Los condiconales también se conocen como decisiones lógicas.
+
+Las sentencia if debe retornar una condición booleana, ya que tiene la opción de que se cumpla o no las condiciones declaradas, por tanto si la variable a evaluar es booleana, no hace falta evaluar su valor, por tanto se puede prescindir u omitir el signo con el cual se evalua y el valor esperado.
+
+La negación de un booleano que ya fue asignado es igual al símbolo de admiración seguido del nombre de la variable. Si la variable originalmente es true, es pasada a false, y viceversa.
+
+void main() {
+
+  bool activado = true;
+  print(activado);
+
+  activado = !activado; // Negación del booleano
+
+  if ( activado == true ) {
+    print('El motor está encendido');
+  } else {
+    print('El motor está apagado');
+  }
+
+   if ( !activado ) { // Doble negación del booleano
+    print('El motor está encendido');
+  } else {
+    print('El motor está apagado');
+  }
+
+}
+
+https://www.youtube.com/watch?v=WSu8ppHB5i4&list=PLCKuOXG0bPi2FqKxXIX7XnFriJmZnsKOE&index=4
+
