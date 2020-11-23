@@ -1,0 +1,28 @@
+Una lista es una colección de objetos que tienen algo en común.
+Se declaran con la palabra reservada List con L mayúscula, nombre de la lista igual corchete, datos separados por comas, corchete, punto y coma.
+Esta declaración de lista es interpretada por Dart como una variable dinámica.
+Para agregar un elemento a una lista se usa su función add con el elemento a agregar como argumento. lista punto add, paréntesis, elemento u elementos separados por coma, parentesis.
+Una lista dinámica permite almacenar datos de cualquier tipo, por lo que puede guardar int, double, String o bool a la vez. Para restringir esto, y almacenar un sólo tipo de dato, se coloca al final de la palabra reservada List, llaves con el tipo de datos que almacenará como argumento. List, llave, int, llave, espacio, lista.
+Para crear una lista con una cantidad de elementos definida, se usa la sintaxis List lista = List(10), donde el argumento 10 es la cantidad de elementos permitidos en la lista.
+Las listas de tamaño fijo no pueden aumentar por medio de la función add.
+Para cambiar el valor de un elemento de una lista: nombreDeLista, corchete, número de la ubicación del elemento a cambiar, corchete, igual, valor del dato a agregar con la sintaxis correspondiente, punto y coma.
+
+void main(){
+
+  List listaDinamica = [1,2,3,4,5];
+  List<int> lista = [1,2,3,4,5];
+  print(listaDinamica);
+  print(lista);
+
+  lista.add(6);
+  print(lista);
+
+  // Lista de tamaño fijo
+  List lista2 = List(10);
+  print(lista2);
+
+  // lista2.add(11); Esto no es correcto ya que es una lista de tamaño fijo
+  lista2[0] = 1;
+  print(lista2);
+
+}
