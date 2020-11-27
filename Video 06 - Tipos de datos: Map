@@ -1,0 +1,39 @@
+Un Map es una colección de pares llave/valor, donde se obtiene un valor por la llave asociada a este. Se puede considerar una lista personalizable, ya que, en vez de que cada valor posea una posición numérica y consecutiva, la ubicación, la llave, será el tipo de datos que nosotros deseemos colocar, siendo mayormente Strings.
+
+Los mapas también son conocidos como diccionarios de datos, por su similitud a la forma en que se presentan los datos, con una palabra, que sería la llave, y el significado de la palabra, que sería el valor de la llave.
+
+Un Map se declara con la palabra reservada Map. En el caso de un Map dinámico, se coloca Map listaDinamica = abre llave, nombre de la llave, dos puntos, valor de la llave, como si continua o nafa si es el último valor, cierra llave, punto y coma. El tipo de dato de la llave y del valor serán dinámicos.
+
+Un Map específico se declara Map, menor que, tipo de dato de la llave, coma, tipo de dato valor, menor que, espacio, nombre del Map, resto igual a dinámico.
+
+Para obtener un valor del Map se realiza nombreMap, abre corchete, llave, cierra corchete. Recordando que si el tipo de dato de la llave es String, se coloca entre comillas simples o dobles.
+
+Para agregar elementos a un Map, se realiza nombreMap, punto, add All, abre paréntesis, abre llave, llave, dos puntos, espacio, valor, cierra llave, cierra paréntesis, punto y coma.
+
+void main() {
+
+  Map<String, dynamic> persona = {
+    'nombre'  : 'Carlos',
+    'edad'    : 32,
+    'soltero' : true      
+  };
+
+  print(persona['nombre']);
+  print(persona['edad']);
+  
+  String propiedad = 'soltero';
+  
+  print(persona[ propiedad ]);
+  
+  Map<int, String> personas = {
+    1 : 'Tony',
+    2 : 'Peter',
+    9 : 'Strange'
+  };
+  
+  personas.addAll({4 : 'Banner'});
+  
+  print(personas);
+  print(personas[2]);
+  
+}
